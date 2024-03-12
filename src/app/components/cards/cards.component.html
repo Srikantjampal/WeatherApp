@@ -1,0 +1,24 @@
+<div class="right-container-week-cards" *ngIf="weatherService.week == true">
+  <div class="card" *ngFor="let card of weatherService.weekData">
+    <div class="card-day">{{ card.day }}</div>
+    <div class="card-temp-img">
+      <img src="{{ card.summaryImage }}" alt="summaryImage" />
+    </div>
+    <div class="card-temp-value">
+      <span class="temp-max"
+        >{{
+          weatherService.celsius == true
+            ? card.tempMax
+            : weatherService.celsiusToFahrenheit(card.tempMax)
+        }}{{ weatherService.celsius == true ? "°C" : "°F" }}
+      </span>
+      <span class="temp-min"
+        >{{
+          weatherService.celsius == true
+            ? card.tempMin
+            : weatherService.celsiusToFahrenheit(card.tempMin)
+        }}{{ weatherService.celsius == true ? "°C" : "°F" }}</span
+      >
+    </div>
+  </div>
+</div>
