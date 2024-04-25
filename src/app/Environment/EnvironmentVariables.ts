@@ -6,8 +6,8 @@ export const EnvironmentalVariables = {
   weatherApiForecastBaseURL:'https://weather338.p.rapidapi.com/weather/forecast',
 
   // variables for api key name and value
-  xRapidApiKeyName:'X-RapidAPI-Key',
-  xRapidApikeyValue:'1f403a1da2msh2dc6fb5af07cc89p1035adjsnde46fa3c2f02',
+  xRapidApiKeyName:'API Name',
+  xRapidApikeyValue:'API KEY VALUE',
 
   // variables for host name and value
   xRapidApiHostName:'X-RapidAPI-Host',
